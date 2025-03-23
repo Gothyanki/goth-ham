@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrer Spill</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h3>Registrer Spill Du Liker</h3>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="how-it-works.html">Hvordan det fungerer</a></li>
+                <li><a href="registering-games.html">Registrer Spill</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="register-games">
+        <h2>Legg Til Dine Favorittspill</h2>
+        <form action="submit-game.php" method="POST">
+            <label for="game-name">Spillnavn:</label>
+            <input type="text" id="game-name" name="game-name" required>
+            
+            <label for="platform">Plattform (f.eks. PC, PS5, Xbox):</label>
+            <input type="text" id="platform" name="platform" required>
+            
+            <label for="genre">Sjanger (f.eks. RPG, Action):</label>
+            <input type="text" id="genre" name="genre" required>
+            
+            <button type="submit">Registrer Spill</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Laget for et skoleprosjekt</p>
+    </footer>
+</body>
+</html>
